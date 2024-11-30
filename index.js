@@ -17,7 +17,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/api_docs", swaggerUi.serve, swaggerUi.setup(documentation));
-app.use('/CaseChain', router);
+app.use('/Art_Connect', router);
 
 // MongoDB Connection
 mongoose.connect(process.env.db, options)
